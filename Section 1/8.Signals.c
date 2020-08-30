@@ -22,7 +22,7 @@ main(void) {
             err_ret("couldn’t execute: %s", buf);
             exit(127);
         }
-/* parent */
+        /* parent */
         if ((pid = waitpid(pid, &status, 0)) < 0)
             err_sys("waitpid error");
         printf("%% ");
